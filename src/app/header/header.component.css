@@ -1,0 +1,20 @@
+.header-base{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 2px solid black;
+  height: 100px;
+  align-items: center;
+}
+
+img{
+  width: 200px;
+}
+
+.header-links{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+li{
+  list-style: none;
+}
