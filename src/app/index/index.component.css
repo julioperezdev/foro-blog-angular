@@ -1,0 +1,28 @@
+.index-base{
+  display: grid;
+  justify-items: center;
+
+}
+a{
+  text-align: center;
+  display: grid;
+  width: 200px;
+  grid-template-columns: 80% 20%;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  border: 2px solid cadetblue;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: blanchedalmond;
+  font-weight: 800;
+}
+
+a:hover{
+  background-color: cadetblue;
+  color: blanchedalmond;
+
+}
+.index-button-image{
+  width: 40px;
+}
