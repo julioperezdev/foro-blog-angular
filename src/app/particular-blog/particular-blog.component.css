@@ -1,0 +1,24 @@
+.particular-blog-base{
+  text-align: center;
+  width: 250px;
+  border: 1px solid aliceblue;
+  border-radius: 20px;
+  box-shadow: #f1f5f5 4px 4px 30px 6px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.particular-blog-title{
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.particular-blog-dates{
+  font-size: 12px;
+  color: #4064a1;
+  font-weight: 900;
+}
+
+.particular-blog-image{
+  width: 150px;
+}
