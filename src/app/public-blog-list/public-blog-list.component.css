@@ -1,0 +1,7 @@
+.public-blog-list-publish-counter{
+  text-align: center;
+}
+.public-blog-list-base{
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+}
