@@ -1,6 +1,7 @@
 .particular-blog-base{
   text-align: center;
   width: 250px;
+  height: 400px;
   border: 1px solid aliceblue;
   border-radius: 20px;
   box-shadow: #f1f5f5 4px 4px 30px 6px;
@@ -9,8 +10,11 @@
 }
 
 .particular-blog-title{
+  display: grid;
   font-weight: 800;
   font-size: 16px;
+  height: 150px;
+  align-content: center;
 }
 
 .particular-blog-dates{
@@ -21,4 +25,6 @@
 
 .particular-blog-image{
   width: 150px;
+  height: 150px;
+
 }

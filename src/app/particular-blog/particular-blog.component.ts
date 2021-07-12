@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 
@@ -9,9 +9,12 @@ import 'sweetalert2/src/sweetalert2.scss'
 })
 export class ParticularBlogComponent implements OnInit {
 
+  @Input() dataTransfer:any;
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.dataTransfer)
   }
 
   public shareModal(){

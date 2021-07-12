@@ -1,7 +1,7 @@
 <div class="particular-blog-base">
-  <img class="particular-blog-image" src="https://blog.desafiolatam.com/wp-content/uploads/2018/05/java-logo.png">
-  <p class="particular-blog-title">La importancia del testing y cuales son las buenas practicas para implementarlo en nuestros proyectos</p>
-  <p class="particular-blog-dates">publicado el 09 Agosto 2021</p>
+  <img class="particular-blog-image" src="{{dataTransfer.imageUrl}}">
+  <p class="particular-blog-title">{{dataTransfer.title}}</p>
+  <p class="particular-blog-dates">publicado el {{dataTransfer.dates}}</p>
   <button class="particular-blog-readme">read me</button>
   <button
     (click)="shareModal()"
