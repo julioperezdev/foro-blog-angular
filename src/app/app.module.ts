@@ -11,6 +11,7 @@ import { PublicBlogListComponent } from './public-blog-list/public-blog-list.com
 import { CategorySelectorComponent } from './category-selector/category-selector.component';
 import { FooterComponent } from './footer/footer.component';
 import { ParticularBlogComponent } from './particular-blog/particular-blog.component';
+import { ParticularBlogPageComponent } from './particular-blog-page/particular-blog-page.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ParticularBlogComponent } from './particular-blog/particular-blog.compo
     PublicBlogListComponent,
     CategorySelectorComponent,
     FooterComponent,
-    ParticularBlogComponent
+    ParticularBlogComponent,
+    ParticularBlogPageComponent
   ],
   imports: [
     BrowserModule,

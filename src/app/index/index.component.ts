@@ -8,8 +8,6 @@ import {}  from '@fortawesome/angular-fontawesome';
 })
 export class IndexComponent implements OnInit {
 
-
-
   constructor() { }
 
   ngOnInit(): void {

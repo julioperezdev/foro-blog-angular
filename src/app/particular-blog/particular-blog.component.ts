@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
+import {LocalBlogsServiceService} from "../services/local-blogs-service.service";
 
 @Component({
   selector: 'app-particular-blog',
@@ -11,19 +12,15 @@ export class ParticularBlogComponent implements OnInit {
 
   @Input() dataTransfer:any;
 
-  constructor() { }
+  constructor(private localBlogsService : LocalBlogsServiceService) { }
 
   ngOnInit(): void {
-    console.log(this.dataTransfer)
   }
 
-  public shareModal(){
-    return Swal.fire({
-      title: 'Error!',
-      text: 'Do you want to continue',
-      icon: 'error',
-      confirmButtonText: 'Cool'
+  public showParticularInformation () {
+    //console.log(this.dataTransfer)
+    this.localBlogsService.selectedBlog.emit({
+      data: this.dataTransfer
     })
   }
-
 }

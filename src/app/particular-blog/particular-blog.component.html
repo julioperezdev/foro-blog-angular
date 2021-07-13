@@ -1,9 +1,9 @@
 <div class="particular-blog-base">
-  <img class="particular-blog-image" src="{{dataTransfer.imageUrl}}">
+  <img class="particular-blog-image" [src]="dataTransfer.imageUrl">
   <p class="particular-blog-title">{{dataTransfer.title}}</p>
   <p class="particular-blog-dates">publicado el {{dataTransfer.dates}}</p>
-  <button class="particular-blog-readme">read me</button>
   <button
-    (click)="shareModal()"
-    class="particular-blog-share">share</button>
+    routerLink="/blog/{{dataTransfer.id}}"
+    class="particular-blog-readme">read me</button>
+  <button class="particular-blog-share">share</button>
 </div>
