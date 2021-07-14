@@ -6,6 +6,7 @@ import {EventEmitter, Injectable, Output} from '@angular/core';
 export class LocalBlogsServiceService {
 
   @Output() selectedBlog:EventEmitter<any> = new EventEmitter();
+  filteredBlog: any;
 
   constructor() { }
 
@@ -46,4 +47,18 @@ export class LocalBlogsServiceService {
       idCategory:4
     }
     ]
+  //
+  // this.localBlogsService.selectedBlog.subscribe(data => {
+  //     console.log("recibiendo data" + data)
+  //   })
+
+  public subscribeBlog() {
+    this.selectedBlog.subscribe(data => {
+      this.searchBlogById(data.id);
+    })
+  }
+
+  public searchBlogById (id: number){
+    console.log(this.filteredBlog = this.blogs.filter(particular => particular.id == id));
+  }
 }

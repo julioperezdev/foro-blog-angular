@@ -1,0 +1,32 @@
+.contacts-base{
+  display: grid;
+  text-align: center;
+  border: 10px solid cornflowerblue;
+  border-radius: 20px;
+  box-shadow: #d6e1f1 4px 20px 20px;
+  width: 600px;
+  margin: 100px auto;
+  padding: 100px;
+}
+
+.contacts-form{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+}
+
+input{
+  text-align: center;
+  margin:10px;
+  border-radius: 10px;
+}
+
+textarea{
+  margin:10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.contacts-textarea{
+  resize: none;
+}

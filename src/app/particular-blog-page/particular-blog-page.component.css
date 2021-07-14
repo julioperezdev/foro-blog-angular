@@ -1,0 +1,17 @@
+.particular-blog-page-base{
+  display: grid;
+  text-align: center;
+}
+
+.particular-blog-page-image{
+  width: 400px;
+  margin: 30px auto;
+}
+
+.particular-blog-page-description{
+  display: grid;
+  justify-self: center;
+  width: 900px;
+  text-align: justify;
+
+}

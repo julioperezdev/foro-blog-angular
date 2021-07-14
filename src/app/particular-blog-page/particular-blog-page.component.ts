@@ -13,9 +13,10 @@ export class ParticularBlogPageComponent implements OnInit {
   constructor(private localBlogsService : LocalBlogsServiceService) { }
 
   ngOnInit(): void {
-    this.localBlogsService.selectedBlog.subscribe(data => {
-      console.log("recibiendo data" + data)
-    })
+    // this.localBlogsService.selectedBlog.subscribe(data => {
+    //   console.log("recibiendo data" + data)
+    // })
+    this.localBlogsService.subscribeBlog();
   }
 
 

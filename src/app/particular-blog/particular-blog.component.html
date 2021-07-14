@@ -4,6 +4,7 @@
   <p class="particular-blog-dates">publicado el {{dataTransfer.dates}}</p>
   <button
     routerLink="/blog/{{dataTransfer.id}}"
+    (click)="showParticularInformation()"
     class="particular-blog-readme">read me</button>
   <button class="particular-blog-share">share</button>
 </div>

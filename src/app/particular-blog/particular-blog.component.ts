@@ -18,7 +18,7 @@ export class ParticularBlogComponent implements OnInit {
   }
 
   public showParticularInformation () {
-    //console.log(this.dataTransfer)
+    console.log(this.dataTransfer)
     this.localBlogsService.selectedBlog.emit({
       data: this.dataTransfer
     })
