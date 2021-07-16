@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {LocalBlogsServiceService} from "../services/local-blogs-service.service";
+import {BlogService} from "../services/blog/blog.service";
 
 @Component({
   selector: 'app-public-blog-list',
@@ -10,9 +11,12 @@ export class PublicBlogListComponent implements OnInit {
 
   public blogs: Array<any> = [];
 
-  constructor(private localBlogsService : LocalBlogsServiceService) { }
+  constructor(
+    private localBlogsService : LocalBlogsServiceService,
+    private blogService: BlogService) { }
 
   ngOnInit(): void {
+    this.blogService.getAllBlogs();
 
     this.blogs = this.localBlogsService.blogs;
     /*

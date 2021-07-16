@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms'
+import {HttpClientModule} from "@angular/common/http";
 
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { AngularEditorModule } from '@kolkov/angular-editor';
@@ -16,6 +17,7 @@ import { ParticularBlogComponent } from './particular-blog/particular-blog.compo
 import { ParticularBlogPageComponent } from './particular-blog-page/particular-blog-page.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { BlogGeneratorComponent } from './blog-generator/blog-generator.component';
+
 
 
 @NgModule({
@@ -34,6 +36,7 @@ import { BlogGeneratorComponent } from './blog-generator/blog-generator.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     AngularEditorModule,
     FormsModule,
     ReactiveFormsModule,
